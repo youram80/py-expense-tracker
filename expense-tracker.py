@@ -17,3 +17,6 @@ def delete_expense():
         print(f"Deleted: {removed['description']}")
     else:
         print("Invalid expense number.")
+        print("5. Delete an expense.")
+        elif choice == '5':
+            delete_expense()
