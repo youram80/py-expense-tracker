@@ -8,4 +8,7 @@ def show_average():
 
     total = sum(item["amount"] for item in expenses)
     average = total / len(expenses)
-    print(f"Average expense: {average:.2f}")
+print(f"Average expense: {average:.2f}")
+print("5. Show average")
+    elif choice == "5":
+    show_average()
