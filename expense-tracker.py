@@ -8,9 +8,18 @@ def show_average():
 
     total = sum(item["amount"] for item in expenses)
     average = total / len(expenses)
-print(f"Average expense: {average:.2f}")
-print("5. Show average")
+    print(f"Average expense: {average:.2f}")
 
-    elif choice == "5":
 
-         show_average()
+def main():
+    while True:
+        print("5. show average")
+        choice = input("Choice: ")
+        if choice == "0":
+            break
+        elif choice == "5":
+            show_average()
+
+
+if __name__ == "__main__":
+    main()
